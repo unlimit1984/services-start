@@ -1,7 +1,13 @@
 import { LoggingService } from './logging.service';
 import { EventEmitter, Injectable } from '@angular/core';
 
+// 1st option
 @Injectable()
+// 2nd option + remove AccountsService from providers[] in app.module.ts
+// @Injectable({
+//   providedIn: 'root'
+// })
+
 export class AccountsService {
   accounts = [
     {
